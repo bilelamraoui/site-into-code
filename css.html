@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Header</title>
+  <!-- Required meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a name="haut" id="haut"></a>
+  <!-- menu -->
+  <header class="header">
+    <h1 class="text-center p-3 col-12">INTO_CODE</h1>
+    <nav id="menu" class="navbar navbar-expand-md navbar-dark">
+      <button class="navbar-toggler m-1" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav" style="width=100%">
+          <li class="nav-item dropdown">
+            <a class="menu--html nav-link dropdown-toggle text-white text-center " id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HTML</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-center" href="index.html#html-intro">Introduction</a>
+              <a class="dropdown-item text-center" href="index.html#html-structure">Structure de base</a>
+              <a class="dropdown-item text-center" href="index.html#html-balises">Balise structurante</a>
+              <a class="dropdown-item text-center" href="index.html#html-arbo">Arborescence</a>
+              <a class="dropdown-item text-center" href="index.html#html-block">Balise inline/block</a>
+              <a class="dropdown-item text-center" href="index.html#html-BEM">Notation BEM</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="menu--js nav-link dropdown-toggle text-white text-center" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">JavaScript</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-center" href="javascript.html#js-intro">Introduction</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-syntaxe">Syntaxe</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-var">Variables</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-tests">Tests conditionnels</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-table">Tables</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-boucles">Boucles</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="menu--css nav-link dropdown-toggle text-white text-center" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CSS</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-center" href="css.html#css-intro">Introduction</a>
+              <a class="dropdown-item text-center" href="css.html#css-selecteurs">Sélecteurs</a>
+              <a class="dropdown-item text-center" href="css.html#css-proprietes">Propriétés et valeurs CSS</a>
+              <a class="dropdown-item text-center" href="css.html#css-marpad">Margin/Padding</a>
+              <a class="dropdown-item text-center" href="css.html#css-flex">Flexbox</a>
+            </div>
+          </li>
+          </li>
+          <li class="na class=" mt-5 " class="mt-5 "v-item dropdown">
+            <a class="menu--bootstrap nav-link text-center  text-white" id="navbarDropdownMenuLink" data-toggle="" href="bootstrap.html#boot-intro" role="button" aria-haspopup="true" aria-expanded="false">Bootstrap</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="scrollContainer" class="container">
+    <div class="container">
+      <h2 class="mt-5">CSS</h2>
+      <div class="anchor" id="css-intro"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Introduction</h3>
+        <p>Le terme CSS est l'acronyme anglais de Cascading Style Sheets qui peut se traduire par "feuilles de style en cascade". Le CSS est un langage informatique utilisé sur l'internet pour mettre en forme les fichiers HTML ou XML. Ainsi, les feuilles
+          de style, aussi appelé les fichiers CSS, comprennent du code qui permet de gérer le design d'une page en HTML. </p>
+        <span>Voici un exemple de règle CSS :</span>
+        <div class="article__code">
+          <pre><code> p {font-color: red; font-size: 12px;}
+            </code></pre>
+        </div>
+        <p> Explications : cette règle définit la couleur et la taille du texte pour les éléments
+          <p> (paragraphes) d'un document HTML. Ainsi, tous les paragraphes auront une police de couleur rouge et une taille de 12 pixel. </p>
+      </article>
+      <div class="anchor" id="css-selecteurs"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Sélecteurs</h3>
+        <p>Un sélecteur est un attribut qui permet de cibler un élément. </p>
+        <div class="article__code">
+          <pre><code> selecteur{ propriété: valeur; }
+            </code></pre>
+          <p>Quand on crée une classe à une balise comme par exemple:</p>
+          <div>html:</div>
+          <div>
+            <<code>p class=“exemple“> </p>
+              </code>
+          </div>
+          <div class="titre__CSS">css:</p>
+          </div>
+          <div class="article__code">
+            <code>.exemple{
+              propriété: valeur;
+              }</code>
+          </div>
+          <p>Le point permet de sélectionner une classe dans le html</p>
+        </div>
+
+      </article>
+      <div class="anchor" id="css-proprietes"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Propriétés et valeurs</h3>
+        <p> La syntaxe de base du CSS est celle-ci :</p>
+        <div class="article__code">
+          <pre><code> selecteur { propriete : valeur; }
+            </code></pre>
+        </div>
+        <p> Certaines proprietes CSS sont incontournables a la construction d'un site web et sont donc systematiquement utilises.</p>
+      </article>
+      <div class="anchor" id="css-marpad"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Margin et padding</h3>
+        <p> Pour chaque élément html on peut définir l'espacement qui le séparera des autres éléments (margin) et les espacements intérieurs (padding). </p>
+        <img src="img/margin_padding.jpg" alt="schema margin et padding">
+        <p> Margin: La marge externe définit l'espace entre le bloc et son extérieur, Cette dernière spécifie d'un coup la valeur de la marge pour les quatre côtés à la fois. On peut aussi specifier une valeur en pourcentage ou en px pour l'un des quatre
+          coté . Exemple: .article{margin: 0px 10px 20px 30px} ou .article{ margin-left / top / right / buttom : 10px }. Padding: Le principe reste le même que tout à l'heure sauf qu'à la place de margin, on utilise padding. Le padding est une zone, appelée
+          aussi "marge interne" . Elle est utilisée pour entourer de marge le "contenu" à l'aide de 4 valeurs. La padding permet aussi de definir un distance entre des élément . Exemple: padding-top : marge intérieure en haut padding-bottom : marge intérieure
+          en bas padding-left : marge intérieure à gauche padding-right : marge intérieure à droite </p>
+      </article>
+      <div class="anchor" id="css-flex"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Flexbox</h3>
+        <p> Flexbox est un module CSS utilise pour la mise en page. Flexbox est organise selon un systeme bloc/element. Le principe est simple : un bloc quelconque auquel est applique la propriete ''display'' et la valeur ''flex/inline-flex'' est defini en
+          tant que conteneur flex. </p>
+        <p> Les elements a l'interieur de ce conteneur flex peuvent alors etre agences selon les proprietes flexbox. </p>
+        <span>	La syntaxe de base est celle-ci :</span>
+        <div class="article__code">
+          <pre><code> conteneur { display : flex; }
+            </code></pre>
+        </div>
+        <span><strong>Liste non-exhaustive des proprietes et valeurs Flexbox</strong></span>
+        <ul>
+          <li><strong>Propriete ''display'' :</strong></li>
+          <p>Valeurs possibles : flex, inline-flex. Cette propriete definit un conteneur flex, de type bloc avec la valeur ''flex'' ou de type inline avec la valeur ''inline-flex''. </p>
+          <li><strong>Propriété ''flex-direction''</strong></li>
+          <p>Valeurs possibles :row, row-reverse, column, column-reverse. Cette propriété définit l'axe et la direction où sont placés les éléments du bloc. En ligne de gauche à droite pour ''row'' et de droite à gauche pour ''row-reverse'', en colonne de
+            haut en bas pour '' column'' et de bas en haut pour ''column-reverse''.
+          </p>
+          <li><strong>Propriété ''flex-wrap''</strong></li>
+          <p>Valeurs possibles :nowrap, wrap, wrap-reverse. Cette propriété définit l'agencement en ligne des éléments. Sur une seule ligne avec ''nowrap'', sur plusieurs avec ''wrap'' de haut en bas et de bas en haut avec ''wrap-reverse''. </p>
+          <li><strong>Propriété ''justify-content''</strong></li>
+          <p>Valeurs possibles :flex-start, flex-end, center, space-between. Cette propriété définit la répartition de l'espace entre les éléments.</p>
+          <li><strong>Propriété ''Flex-start''</strong></li>
+          <p> Les éléments sont groupés au début du conteneur, le bord du premier élément aligné avec le bord du conteneur. </p>
+          <li><strong>Propriété ''Flex-end''</strong></li>
+          <p> Les éléments sont regroupés à la fin du conteneur, le bord du dernier élément aligné avec le bord du conteneur. </p>
+          <li><strong>Propriété ''Center''</strong></li>
+          <p>Les éléments sont groupés au centre du conteneur</p>
+          <li><strong>Propriété''Space-between''</strong></li>
+          <p>Les premiers et derniers élément sont alignés aux bords du conteneur, l'espace entre les éléments étant égaux </p>
+        </ul>
+        <span><strong>Les propriétés applicables aux éléments:</strong></span>
+        <ul>
+          <li><strong>Propriété "Order" :</strong></li>
+          <p>Valeurs possibles : nombre entiers Cette propriété définit l'ordre d'affichage des éléments selon leur nombre, en ordre croissant. </p>
+          <li><strong>Propriété ''flex-grow''</strong></li>
+          <p>Valeurs possibles : nombre entiers Cette propriété définit la capacité d'un élément à grossir, en fonction de son nombre et de celui des autres éléments. Un élément défini à 2 et les autres à 1 pourra prendre deux fois plus d'espace que les
+            autres.
+            <li><strong>Propriété ''flex-shrink''</strong></li>
+            <p>Valeurs possibles : nombre entiers Cette propriété complémentaire à la propriété ''flex-grow'' définit la capacité d'un élément à rétrecir, en fonction de son nombre et de celui des autres éléments. Un élément défini à 2 et les autres à 1
+              pourra se réduire de moitié. </p>
+      </article>
+    </div>
+    <div>
+      <a id="cRetour" class="cInvisible" href="#haut"></a>
+    </div>
+    <!-- Fin article introduction html -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/zenscroll-min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

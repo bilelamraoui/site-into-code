@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url('../font/BebasNeue.otf');
+}
+
+.header {
+  background-color: #eae9ec;
+  background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23ffffff' fill-opacity='0.49' fill-rule='evenodd'/%3E%3C/svg%3E");
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: BebasNeue;
+  font-size: 5em;
+  color: #DB5552;
+}
+
+h2 {
+  color: #39d125;
+}
+
+h3 {
+  color: #DB5552;
+}
+
+.article__code {
+  margin: 4%;
+  box-shadow: 0px 5px 5px #EFF0F1;
+  border: 20px solid #EFF0F1;
+  background-color: #EFF0F1;
+  color: black;
+}
+
+/* dropdown menu */
+
+#menu {
+  background-color: indigo;
+  color: white;
+  padding: 0 2rem;
+  margin: 0 0;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  padding: 0;
+  border: 0;
+}
+
+.dropdown-item {
+  padding: 15px 30px;
+  color: #222538;
+  border-bottom: 1px solid #CCC;
+}
+
+.dropdown-item:hover {
+  color: #222538;
+  border-bottom: 1px solid #CCC;
+}
+
+.menu--html:hover {
+  border-top: 5px solid #DB5552;
+  background-color: RGBa(228, 77, 38, 0.15);
+  padding-top: 0;
+}
+
+.menu--js:hover {
+  border-top: 5px solid #39D125;
+  background-color: RGBa(57, 209, 37, 0.15);
+  padding-top: 0;
+}
+
+.menu--css:hover {
+  border-top: 5px solid #519aff;
+  background-color: RGBa(81, 154, 255, 0.15);
+  padding-top: 0;
+}
+
+.menu--bootstrap:hover {
+  border-top: 5px solid #f1dc4f;
+  background-color: RGBa(241, 211, 79, 0.15);
+  padding-top: 0;
+}
+
+.menu--html+.dropdown-menu a {
+  background-color: RGBa(228, 77, 38, 0.7);
+  padding: 10px 30px 10px 30px;
+}
+
+.menu--html+.dropdown-menu a:hover {
+  background-color: RGBa(228, 77, 38, 0.9);
+  padding: 10px 30px 10px 30px;
+  color: #EEE;
+}
+
+.menu--js+.dropdown-menu a {
+  background-color: RGBa(57, 209, 37, 0.7);
+  padding: 10px 30px 10px 30px;
+}
+
+.menu--js+.dropdown-menu a:hover {
+  background-color: RGBa(57, 209, 37, 0.9);
+  padding: 10px 30px 10px 30px;
+  color: #EEE;
+}
+
+.menu--css+.dropdown-menu a {
+  background-color: RGBa(81, 154, 255, 0.7);
+  padding: 10px 30px 10px 30px;
+}
+
+.menu--css+.dropdown-menu a:hover {
+  background-color: RGBa(81, 154, 255, 0.9);
+  padding: 10px 30px 10px 30px;
+  color: #EEE;
+}
+
+.menu--bootstrap+.dropdown-menu a {
+  background-color: RGB(251, 216, 99);
+  padding: 10px 30px 10px 30px;
+}
+
+.menu--bootstrap+.dropdown-menu a:hover {
+  background-color: RGB(200, 165, 75);
+  padding: 10px 30px 10px 30px;
+  color: #EEE;
+}
+
+/* smooth scrolling */
+
+body, .smooth-container {
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: auto;
+}
+
+/* Sticky menu */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky+.container {
+  padding-top: 60px;
+}
+
+.anchor {
+  display: block;
+  height: 200px;
+  /*same height as header*/
+  margin-top: -200px;
+  /*same height as header*/
+  visibility: hidden;
+}
+
+/* Button back to top */
+
+a#cRetour {
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  right: 20px;
+  opacity: 1;
+  z-index: 99999;
+  transition: all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+a#cRetour:before {
+  content: "\25b2";
+}
+
+a#cRetour:hover {
+  background: rgba(0, 0, 0, 1);
+  transition: all ease-in 0.2s;
+}
+
+a#cRetour.cInvisible {
+  bottom: -35px;
+  opacity: 0;
+  transition: all ease-in 0.5s;
+}
+
+a#cRetour.cVisible {
+  bottom: 20px;
+  opacity: 1;
+}

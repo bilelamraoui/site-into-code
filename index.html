@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Header</title>
+  <!-- Required meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <a name="haut" id="haut"></a>
+
+  <!-- menu -->
+  <header class="header">
+    <h1 class="text-center p-3 col-12">INTO_CODE</h1>
+    <nav id="menu" class="navbar navbar-expand-md navbar-dark">
+      <button class="navbar-toggler m-1" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav" style="width=100%">
+          <li class="nav-item dropdown">
+            <a class="menu--html nav-link dropdown-toggle text-white text-center " id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HTML</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-center" href="index.html#html-intro">Introduction</a>
+              <a class="dropdown-item text-center" href="index.html#html-structure">Structure de base</a>
+              <a class="dropdown-item text-center" href="index.html#html-balises">Balise structurante</a>
+              <a class="dropdown-item text-center" href="index.html#html-arbo">Arborescence</a>
+              <a class="dropdown-item text-center" href="index.html#html-block">Balise inline/block</a>
+              <a class="dropdown-item text-center" href="index.html#html-BEM">Notation BEM</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="menu--js nav-link dropdown-toggle text-white text-center" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">JavaScript</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-center" href="javascript.html#js-intro">Introduction</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-syntaxe">Syntaxe</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-var">Variables</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-tests">Tests conditionnels</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-table">Tables</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-boucles">Boucles</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="menu--css nav-link dropdown-toggle text-white text-center" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CSS</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-center" href="css.html#css-intro">Introduction</a>
+              <a class="dropdown-item text-center" href="css.html#css-selecteurs">Sélecteurs</a>
+              <a class="dropdown-item text-center" href="css.html#css-proprietes">Propriétés et valeurs CSS</a>
+              <a class="dropdown-item text-center" href="css.html#css-marpad">Margin/Padding</a>
+              <a class="dropdown-item text-center" href="css.html#css-flex">Flexbox</a>
+            </div>
+          </li>
+          </li>
+          <li class="na class=" mt-5 " class="mt-5 "v-item dropdown">
+            <a class="menu--bootstrap nav-link text-center  text-white" id="navbarDropdownMenuLink" data-toggle="" href="bootstrap.html#boot-intro" role="button" aria-haspopup="true" aria-expanded="false">Bootstrap</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="scrollContainer" class="container">
+    <div class="container">
+      <h2 class="mt-5">HTML</h2>
+      <div class="anchor" id="html-intro"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Introduction</h3>
+        <p>Comme son nom l’indique, le HTML, ou « HyperText Markup Language », est un langage permettant de réaliser des pages web. Tout site internet a besoin de HTML pour s’afficher. Lorsque l’on crée un site web ,nous allons avoir besoin d'utiliser du
+          HTML. Définition : HyperText Markup Language (HTML) est un langage de “mark up (balisage)” qui définit la structure logique d’un document WWW diffusé sur le Web. </p>
+        <h3>La dérive HTML :</h3>
+        <ul>
+          <li> Conçu comme un langage de structuration logique du contenu.</li>
+          <li> Elle est utilisé comme langage de présentation et de mise en page.</li>
+        </ul>
+        <h3>A quoi cela sert?</h3>
+        <p>Il permet de faire des documents HTML qui pourront être lu, chargé par des navigateur, ce qui veut dire que si vos pages sont sur un serveur, elles seront accessibles sur le www : (Worl Wide Web) via un client Web (browser). Ainsi quiconque ayant
+          un accès au Web et connaissant l'adresse de vos pages pourra les browser. Ce language vous permet donc de créer des documents HTML dans lesquels vous pourrez mettre ce que vous voudrez à condition de respecter le principe des différents synthaxe
+          HTML. </p>
+      </article>
+      <div class="anchor" id="html-structure"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Structure de base</h3>
+        <p>Le document HTML commence toujours par ce que nous appelons la structure de base. Cette structure est obligatoire et constant. </p>
+        <div class="article__code">
+            <pre>
+              <code>
+                  <<span>!DOCTYPE html></span><br><br>
+                  &nbsp; <<span>html></span><br>
+                  &nbsp;  &nbsp;<<span>head></span><br>
+                  &nbsp;  &nbsp;  &nbsp;<<span>title>Titre<</span>/title><br>
+                  &nbsp;  &nbsp;  &nbsp;<<span>meta charset="utf-8"></span><br>
+                  &nbsp;  &nbsp; <<span>/head></span><br>
+                  &nbsp;<<span>body></span><br>
+                  &nbsp;<<span>/body></span><br>
+                  &nbsp; <<span>/html></span>
+                </code>
+              </pre>
+        </div>
+        <p>Il est possible de comprendre le document HTML de manière très simple, grâce à une division des blocs </p>
+      </article>
+      <div class="anchor" id="html-balises"></div>
+      <article class=" m-lg-2 m-md-2 m-sm-1">
+        <h3>Balises structurantes</h3>
+        <p> Les balises structurantes permets de structurer votre page web et votre code, comme vous pouvez le voir dans le schéma ci-dessous. </p>
+        <img src="./img/balise_structurante.png" alt="schema">
+        <p> La balise header, est pour l’en tête avec la balise nav, qui veux dire navigation, à l’intérieur il y aura le menu. Ensuite nous avons la balise section celle la permet de regrouper des contenus de même thème. Pour la balise article, elle regroupe
+          des éléments indépendant. Exemple pour des articles de journaux. La balise inside sert a mettre des informations complémentaires, il se situe souvent à droite de la page. Pour finir le footer est le pied de page, on y trouve souvent les liens
+          contact, nom, mentions légales.
+        </p>
+      </article>
+
+
+      <!-- TO DO : FINIR INTEGRATION  -->
+
+
+
+      <div class="anchor" id="html-arbo"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Arborescence</h3>
+        <p>L'arborescence est l'ordre dans lequel les fichiers sont structurés. </p>
+        <img src="img/fichier.jpg" alt="">
+      </article>
+      <div class="anchor" id="html-block"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Balises block/inline </h3>
+        <p>Mais comment reconnaitre une balise inline d'une balise block ?</p>
+        <p> block: une balise de type block sur votre page web crée automatiquement un retour à la ligne avant et après. </p>
+        <p>Il suffit d'imaginer tout simplement un bloc. Votre page web sera en fait constituée d'une série de blocs les uns à la suite des autres. Mais vous verrez qu'en plus, il est possible de mettre un bloc à l'intérieur d'un autre, ce qui va augmenter
+          considérablement nos possibilités pour créer le design de notre site ! </p>
+        <p>inline: une balise de type inline se trouve obligatoirement à l'intérieur d'une balise block. Une balise inline ne crée pas de retour à la ligne, le texte qui se trouve à l'intérieur s'écrit donc à la suite du texte précédent, sur la même ligne
+          (c'est pour cela que l'on parle de balise « en ligne »).</p>
+        <p> Afin de mieux vous aider à assimiler quelles balises sont inline et quelles balises sont block, voici un petit tableau dressant la liste de quelques balises courantes. </p>
+        <div class="article__code">
+          <pre><div class="article__code">
+            <h5><strong>Les balises de type block</strong></h5>
+            <code>
+              <<span>p> <br><br>
+              <</span>em> <br><br>
+              <<span>footer><br><br>
+              <</span>strong><br><br>
+              ...
+            </code></pre>
+          <pre><div class="article__code">
+              <code>
+                <<span>h1><br><br>
+                <</span>mark><br><br>
+                <<span>h2><br><br>
+                <</span>a><br><br>
+                <<span>article><br><br id="bem">
+                ...
+              </code>
+            </pre>
+        </div>
+      </article>
+      <div class="anchor" id="html-BEM"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Notation BEM</h3>
+        <p>BEM est l'acronyme de Modificateur d'élément de bloc (Block Element Modifier ) qui consiste en un modèle qui permet de nommer des classes d'éléments HTML. Cette méthode nous aide à travailler de manière plus efficace, plus rapide et plus claire,
+          en soutenant tous ceux qui sont impliqués dans le projet en question et ceux qui peuvent venir s'intégrer ou simplement «aider» dans le processus. </p>
+        <h4>Blocs</h4>
+        <p>L'un des principes de la Méthodologie BEM recommande l'indépendance des blocs afin de faciliter la maintenance, car il se peut qu'à l'avenir vous deviez déplacer, ajouter ou supprimer des blocs. L'indépendance des blocs facilitera certainement
+          ces tâches. En bref, nous nommons la classe d'un bloc avec un nom qui l'identifie. Par exemple :</p>
+        <div class="article__code">
+        <pre>
+          <code>
+            <span><<span>div class="block"><<span>/</span>div>
+          </code>
+          <h5 class="titre__CSS">CSS</h5>
+          <code>
+            .block { }
+          </code>
+        </pre>
+        </div>
+        <h4>Éléments</h4>
+        <p> Un élément est une sorte de "pièce" du bloc, un menu est un élément d'un Bloc header. La méthodologie BEM suggère que les classes de noms soient formées de sorte que le nom du bloc vienne en premier, juste après le nom de l'élément et qu'ils soient
+          séparés par deux traits de soulignement (__). </p>
+        <div class="article__code">
+        <pre>
+          <code>
+            <span><<span>div class="block"><<span>/</span>div>
+          </code>
+          <h5 class="titre__CSS ">CSS</h5>
+          <code>
+            .block { }
+          </code>
+        </pre>
+        </div>
+        <h4>Modificateurs</h4>
+        <p>Nous utilisons les modificateurs pour changer les styles d'un élément spécifique.</p>
+        <p>La méthodologie BEM recommande que si un modificateur doit être créé, il doit être écrit en syntaxe en utilisant deux traits d'union (-) après le nom de l'élément ou du bloc à modifier.</p>
+        <div class="article__code">
+        <pre>
+          <code>
+            .header__navigation { } <br>
+            .header__navigation--secondary { }
+          </code>
+        </pre>
+        </div>
+        <p>"L'un des avantages de la méthodologie BEM est l'utilisation d'une seule classe par élément dans le code"</p>
+      </article>
+    </div>
+    <div>
+      <a id="cRetour" class="cInvisible" href="#haut"></a>
+    </div>
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/zenscroll-min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>

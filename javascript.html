@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Header</title>
+  <!-- Required meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a name="haut" id="haut"></a>
+  <!-- menu -->
+  <header class="header">
+    <h1 class="text-center p-3 col-12">INTO_CODE</h1>
+    <nav id="menu" class="navbar navbar-expand-md navbar-dark">
+      <button class="navbar-toggler m-1" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav" style="width=100%">
+          <li class="nav-item dropdown">
+            <a class="menu--html nav-link dropdown-toggle text-white text-center  " id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HTML</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-center" href="index.html#html-intro">Introduction</a>
+              <a class="dropdown-item text-center" href="index.html#html-structure">Structure de base</a>
+              <a class="dropdown-item text-center" href="index.html#html-balises">Balise structurante</a>
+              <a class="dropdown-item text-center" href="index.html#html-arbo">Arborescence</a>
+              <a class="dropdown-item text-center" href="index.html#html-block">Balise inline/block</a>
+              <a class="dropdown-item text-center" href="index.html#html-BEM">Notation BEM</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="menu--js nav-link dropdown-toggle text-white text-center" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">JavaScript</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-center" href="javascript.html#js-intro">Introduction</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-syntaxe">Syntaxe</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-var">Variables</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-tests">Tests conditionnels</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-table">Tables</a>
+              <a class="dropdown-item text-center" href="javascript.html#js-boucles">Boucles</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="menu--css nav-link dropdown-toggle text-white text-center" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CSS</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-center" href="css.html#css-intro">Introduction</a>
+              <a class="dropdown-item text-center" href="css.html#css-selecteurs">Sélecteurs</a>
+              <a class="dropdown-item text-center" href="css.html#css-proprietes">Propriétés et valeurs CSS</a>
+              <a class="dropdown-item text-center" href="css.html#css-marpad">Margin/Padding</a>
+              <a class="dropdown-item text-center" href="css.html#css-flex">Flexbox</a>
+            </div>
+          </li>
+          </li>
+          <li class="na class=" mt-5 " class="mt-5 "v-item dropdown">
+            <a class="menu--bootstrap nav-link text-center  text-white" id="navbarDropdownMenuLink" data-toggle="" href="bootstrap.html#boot-intro" role="button" aria-haspopup="true" aria-expanded="false">Bootstrap</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="scrollContainer" class="container">
+    <div class="container">
+      <h2 class="mt-5">JavaScript</h2>
+      <div class="anchor" id="js-intro"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Introduction</h3>
+        <p>Le JavaScript est un langage de programmation principalement utilisé dans les pages web intéractives, coté client, mais pouvant également être employé du coté serveur graçe au framework Node.js. </p>
+        <p>Le JavaScript s’écrit dans un éditeur de texte, et est interprété par les naviguateurs.</p>
+      </article>
+      <div class="anchor" id="js-syntaxe"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Syntaxe</h3>
+        <p>En JavaScript, toute instruction doit se terminer par un point virgule <strong>;</strong> </p>
+        <div class="article__code">
+          <pre>
+            <code>
+              console.log("Bonjour monde!");
+            </code>
+          </pre>
+        </div>
+      </article>
+      <div class="anchor" id="js-var"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+          <h3>Variables</h3>
+          <p>Si le terme de variable vous est totalement inconnu, vous pouvez aller consulter le site d’algorithmique à la section « Variables ». </p>
+          <p>Lors de la déclaration d’une variable en JavaScript on déclare de cette façon :</p>
+          <pre>
+            <code>
+            var  numeroTel = 0606060606 ;
+            </code>
+          </pre>
+      </article>
+      <div class="anchor" id="js-tests"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Tests conditionnels</h3>
+        <h4>If else</h4>
+        <p>Le test If else renvoi au Si-Sinon en algorithmique, il permet de tester une expression booléenne et de donner des instructions a exécuter selon le resultat.</p>
+        <div class="article__code">
+          <pre>
+            <code>
+            //if est l’équivalent de « Si » en pseudo-code
+            if (true) {
+
+            }
+
+            //Et else équivaut à « Sinon »
+            else {
+
+            }
+          </code>
+        </pre>
+        </div>
+        <h4>Switch</h4>
+        <p>le principe d’un Switch est équivalent au fonctionnement d’un Selon(cas) en algorithmique, il ne traite que des entiers, mais à l’avantage de les traiter au cas par cas, un bon exemple de cas pratique s’avère être le choix d’une langue par exemple :</p>
+        <div class="article__code">
+          <pre>
+            <code>
+              var francais = 0 ;
+              var anglais = 1 ;
+              var langue = francais ;
+
+              switch (langue) { //Selon la langue
+                case francais: //Dans le cas où langue = français ;
+                	 console.log("Vous parlez français !");  //afficher un message indiquant la langue parlée.
+                  break; //Fin selon
+                case anglais :
+            	  console.log("You speak english !");
+                  break;
+                 default: //Si ne parle ni français, ni anglais, instructions par défaut
+                  console.log("Vous ne parlez aucune langue ?");
+              }
+            </code>
+          </pre>
+        </div>
+      </article>
+      <div class="anchor" id="js-table"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Tables</h3>
+        <p>Un tableau, ou un « array » comme on le dit en anglais, est comme son nom l’indique un tableau de valeur qui possède ses propres caractéristiques. </p>
+        <p>Un tableau crée verra ses valeurs se voir affecter un « indice » ou « index » allant de 0 au dernier element du tableau. </p>
+        <span>C’est graçe à cet index que l’on pourra récupérer l’élément qui nous interesse.</span>
+        <span>Exemple :</span>
+        <div class="article__code">
+        <pre>
+          <code>
+            var  tab = []; //Declaration du tableau tab
+            tab.push(“elem”); //on affecte à tab la valeur “elem”
+            console.log(tab[0]); // vaut “elem”
+
+            var tab = [“rouge”, “bleu”, “vert”, “jaune”];
+            tab.push(“violet”, “rose”);
+
+            tab.lenght = 2; //réduit le tableau
+            console.log(tab.lenght); // affiche la longueur du tableau
+
+            object.keys(tab); // [‘0’, ‘1’, ‘2’, ‘3’]
+          </code>
+        </pre>
+        </div>
+      </article>
+      <div class="anchor" id="js-boucles"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Boucles</h3>
+        <p>Le principe d’une boucle en JavaScript est de répéter une action tant que la condition de continuation est remplie, cependant, il faut bien faire en sorte que la condition de continuation soit fausse ou prenne fin à un moment donné, sinon, on
+          rentrera dans une boucle infinie qui bouclera sans jamais executer le reste du code. </p>
+        <span>Les boucles permettent de gagner du temps en automatisant certaines tâches.</span>
+        <span>Il existe différentes structures de boucles, mais ici nous ne verrons que le « for »</span>
+        <span>Par exemple:</span>
+        <div class="article__code">
+          <pre>
+            <code>//On déclare et initialise un tableau contenant des couleurs sous forme de Chaines de caractère
+          var tab = [“bleu”, “vert”, “jaune”,”rouge”];
+
+          //On déclare une variable result pour stocker notre résultat
+          var result; //Notre variable result
+
+          //On execute notre boucle avec pour condition de continuation que la variable i, indice, soit inférieur à la longueur du tableau, et que i s’incrémente à chaque passage de la boucle.
+
+          for (var i= 0 ; i < tab.lenght ; i++) {
+                 result += tab[i];
+          }
+
+          //Donc notre variable result vaut result = result + tab[i]
+          </code>
+        </pre>
+        </div>
+      </article>
+      <div class="anchor" id="js-function"></div>
+      <article class=" m-lg-3 m-md-2 m-sm-1">
+        <h3>Fonctions</h3>
+        <p>Une fonction est un ensemble d’instruction regorupée dans le but d’exécuter une tâche préçise. Par exemple console.log() ; est une fonction qui affiche un message dans la console. L’interet de créer une fonction est de définir un outil pour une
+          tâche préçise et d’y faire appel quand on en a besoin sans avoir à retaper l’ensemble du code. En JavaScript, il y a deux type de fonctions, les fonctions dites « natives » et celles que l’on crée soit même. Les fonctions natives sont intégrés
+          de base dans le langage JavaScript, nul besoin de les créer, seulement de les « appeler ». Inutile de connaître le code qui compose console.log() ; pour l’appeler. </p>
+        <p>Par contre, si vous avez besoin de repeter une action, et qu’aucune fonction native n’existe dans JavaScript pour effectuer cette action, vous pouvez créer vous même cette fonction.</p>
+        <p>Pour créer une fonction, il faut tout d’abord la nommer, le nom d’une fonction doit respecter les mêmes conventions que le nommage des variables.</p>
+        <div class="article__code">
+          <pre>
+            <code>//On declare la fonction et on la nomme
+              //Entre parenthèse les parametres, à savoir les données nécéssaire a la fonction pour fonctionner et donner un resultat
+              function functionName() {  //Entre accolade, le code de la fonction.
+                //les instructions
+
+              }//Fin de la fonction
+            </code>
+          </pre>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div>
+    <a id="cRetour" class="cInvisible" href="#haut"></a>
+  </div>
+  <!-- Fin article introduction html -->
+  <script src="js/zenscroll-min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
